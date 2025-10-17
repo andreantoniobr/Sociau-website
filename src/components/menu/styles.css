@@ -1,0 +1,84 @@
+.menu {
+    width: 50%;
+}
+
+.menu-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-text);
+    transition:
+        width 0.4s ease,
+        left 0.4s ease;
+}
+
+.menu-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.logged-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.user-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.logged-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 120%;
+    right: 0;
+    min-width: 180px;
+}
+
+.logged-options a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logged-options a:hover,
+.logout:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    color: #d32f2f;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

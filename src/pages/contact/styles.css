@@ -1,0 +1,42 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contact-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38%;
+  background-color: var(--color-buttons);
+}
+
+.contact-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--text-7xl);
+  color: var(--color-text);  
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 8%;
+  margin-top: 1.25rem;
+  background-color: var(--color-text);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .contact-cards {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+}

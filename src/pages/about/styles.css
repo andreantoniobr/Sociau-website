@@ -1,0 +1,40 @@
+.about-page .join-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-third);
+  padding-left: 5%;
+  text-align: left;
+}
+
+.about-page .join-us h1 {
+  font-size: var(--text-5xl);
+  color: var(--color-text);
+  font-weight: 700;
+  margin-top: 10%;
+}
+
+.about-page .join-us span {
+  color: var(--color-buttons);
+}
+
+.about-page .join-us p {
+  width: 50%;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: var(--color-text);
+}
+
+.about-page .join-us .btn {
+  width: 22%;
+  margin-top: 4rem;
+}
+
+.top img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -18%;
+}

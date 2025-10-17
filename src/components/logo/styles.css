@@ -1,0 +1,29 @@
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; /* substitui gap-4 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.1);
+}
+
+
+.top-menu .logo {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+
+.top-menu .logo:hover {
+    transition: 0.5s;
+    transform: scale(1);
+}

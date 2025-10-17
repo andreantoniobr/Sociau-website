@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -12,14 +11,17 @@
   --color-text: #ffffff;
 
   /* Text */
-
-  --font-size-xx-lg: 32px;
-  --font-size-x-lg: 28px;
-  --font-size-lg: 24px;
-  --font-size-md: 20px;
-  --font-size-sm: 18px;
-  --font-size-x-sm: 16px;
-  --font-size-xx-sm: 14px;
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-md: 18px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 28px;
+  --text-3xl: 32px;
+  --text-4xl: 36px;
+  --text-5xl: 40px;
+  --text-6xl: 44px;
+  --text-7xl: 48px;
 
   --font-weigth-bold: 700;
   --font-weigth-semi-bold: 600;
@@ -32,3 +34,4 @@
   /* Font */
   --default-font: 'Montserrat', sans-serif;
 }
+
