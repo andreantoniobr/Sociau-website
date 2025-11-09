@@ -1,0 +1,56 @@
+.donate-bg {   
+    background: url("../../assets/donate-bg.png") no-repeat bottom right;
+    background-color: var(--color-second);   
+    background-size: 100%;   
+}
+
+.donate {
+    display: flex;    
+    flex-direction: column;    
+    min-height: max-content;
+    padding: 5% 0;
+    gap: 5rem;
+}
+
+.donate .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.donate .title p {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--color-third);
+}
+
+.donate .bank-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.donate .bank-info p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.donate .bank-info .pix {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate .bank-info .pix img {
+    width: 30%;
+}
+
+.donate .bank-info .ted {
+    width: 60%;
+}
+
+.donate .bank-info .bank-info-title {
+    font-size: 50px;
+}

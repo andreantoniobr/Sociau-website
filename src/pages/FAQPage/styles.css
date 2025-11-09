@@ -1,0 +1,16 @@
+.faq-title {
+    width: 100%;
+    background-color: var(--color-second);
+    padding: 5% 0;
+    text-align: center;
+}
+
+.faq-title h1 {
+    color: var(--color-third);
+    font-size: 50px;
+}
+
+.faq-title p {
+    font-size: var(--text-lg);
+    margin-top: 1.5rem;
+}

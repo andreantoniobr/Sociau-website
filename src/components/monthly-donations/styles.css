@@ -1,0 +1,34 @@
+.donations {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: max-content;
+    background-color: var(--color-main);
+    padding: 5% 0;
+    gap: 2.5rem;
+}
+
+.donations .title {
+    font-size: 50px;
+}
+
+.donations p {
+    color: var(--color-text);
+    width: 90%;
+    font-weight: 600;
+}
+
+.donations .text {
+    font-size: 25px;
+}
+
+.donations .icons {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.donations .icons img {
+    width: 12%;
+}

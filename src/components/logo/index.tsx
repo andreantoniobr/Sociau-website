@@ -5,10 +5,9 @@ import "./styles.css";
 
 interface LogoProps {
   sizeIcon?: number;
-  onClick?: () => void;
 }
 
-export default function Logo({ sizeIcon = 50, onClick }: LogoProps) {
+export default function Logo({ sizeIcon = 50}: LogoProps) {
   return (
     <Link to="/" className="logo-container">
       <LogoIconFragment size={sizeIcon} />

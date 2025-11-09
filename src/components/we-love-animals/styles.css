@@ -1,0 +1,40 @@
+.we-love-animals {
+    display: flex;
+    flex-direction: row;
+}
+
+.we-love-animals-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.we-love-animals-left img {
+    width: 100%;
+}
+
+.we-love-animals-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.we-love-animals-right h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.we-love-animals-right  h2 span {
+    color: var(--color-third);
+}
+
+.we-love-animals-right p {
+    width: 85%;
+    font-size: var(--text-lg);
+    font-weight: 700;
+    margin-top: 2%;
+}

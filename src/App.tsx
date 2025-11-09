@@ -1,23 +1,33 @@
-import './App.css'
-import ProfileButtonFragment from './fragments/profile-button'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/home";
-import Contact from "./pages/contact";
-import Login from "./pages/login";
-import About from "./pages/about";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { AuthProvider, useAuth } from "./lib/context/AuthContext";
+import AppRoutes from "./routes";
 
-function App() {
+const queryClient = new QueryClient();
+
+function AppContent() {
+  const { isAuthenticated } = useAuth();
+
+  if (isAuthenticated === null) {
+    return <div>Verificando sessão...</div>; // Bloqueia renderização até validar a sessão
+  }
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/contato" element={<Contact />} />
-        <Route path="/quemsomos" element={<About />} />
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <AuthProvider>
+      <QueryClientProvider client={queryClient}>
+        <AppContent />
+      </QueryClientProvider>
+    </AuthProvider>
+  );
+}
+
+export default App;

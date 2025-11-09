@@ -1,0 +1,30 @@
+.mission-bg {
+    background-image: url("../../assets/mission-bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission .text {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    height: max-content;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.mission .text p {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.mission .text p:first-child {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.mission .text span {
+    color: var(--color-third);
+}

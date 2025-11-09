@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./styles.css";
-import ButtonFragment from "../../fragments/button-fragment";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
@@ -9,9 +8,10 @@ export default function Menu() {
   return (
     <nav className="menu">
       <ul className="menu-list">
-        <li><Link to="/quemsomos" className="menu-link">Quem Somos</Link> </li>
-        <li><Link to="/queroajudar" className="menu-link">Quero Ajudar</Link></li>
+        <li><Link to="/quem-somos" className="menu-link">Quem Somos</Link> </li>
+        <li><Link to="/quero-ajudar" className="menu-link">Quero Ajudar</Link></li>
         <li><Link to="/contato" className="menu-link">Contato</Link></li>
+        <li><Link to="/perguntas-frequentes" className="menu-link">FAQ</Link></li>
         <li>
           {loggedIn ? (
             <div className="logged-menu">

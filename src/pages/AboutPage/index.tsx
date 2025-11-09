@@ -2,6 +2,8 @@ import "./styles.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import ButtonFragment from '../../fragments/button-fragment'
+import WeLoveAnimals from "../../components/we-love-animals";
+import Cat from "../../assets/cat.png";
 
 export default function AboutPage() {
   return (
@@ -16,7 +18,9 @@ export default function AboutPage() {
           </h1>
           <p>Somos uma ponte entre ONGs de adoção e pessoas que querem fazer a diferença. Venha conectar corações e lares com a gente!</p>
           <ButtonFragment className="h-60px round semibold shadow-white" label="Venha fazer parte"/> 
-        </section>        
+          <img src={Cat} alt="Imagem decorativa" className="vazando"></img>
+        </section>  
+        <WeLoveAnimals />      
       </main>
       <Footer />
     </>
